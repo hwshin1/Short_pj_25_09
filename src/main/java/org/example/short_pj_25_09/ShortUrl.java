@@ -1,5 +1,6 @@
 package org.example.short_pj_25_09;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,4 +19,11 @@ public class ShortUrl {
     private LocalDateTime updateDate = LocalDateTime.now();
     private String body;
     private String url;
+
+    @Setter(AccessLevel.NONE)
+    private long count;
+
+    public void increaseCount() {
+        count++;
+    }
 }
