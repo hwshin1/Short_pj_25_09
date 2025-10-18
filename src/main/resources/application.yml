@@ -6,4 +6,4 @@ spring:
     include: secret
 custom:
   site:
-    name: "My Site Prod"
+    name: "My Site"
